@@ -15,7 +15,7 @@ class Game : public QWidget
 public:
     Game(WelcomeWindow *welcome_window, MainWindow *main_window, QWidget *parent = 0);
     int score;
-
+    ~Game();
 public slots:
     void RefreshPosition();
     void GenBall();

@@ -25,7 +25,7 @@ public:
     }
     void UpdatePosition() {
          x = x - vx;
-         emit PositionChange(x, y);
+
     }
     void PaintBall(QPainter &painter) {
         painter.drawPixmap(x, y, pic);
@@ -33,8 +33,6 @@ public:
 
     int x,y;
     int type;
-signals:
-    void PositionChange(int, int);
 private:
     QPixmap pic;
     int vx; // velocity

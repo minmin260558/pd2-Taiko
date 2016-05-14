@@ -83,3 +83,11 @@ void Game::keyPressEvent(QKeyEvent *event){
     }
     event->accept();
 }
+
+Game::~Game(){
+
+    delete movetmr;
+    delete gentmr;
+    for(int i=0;i<balls.size();++i)
+        delete balls[i];
+}
