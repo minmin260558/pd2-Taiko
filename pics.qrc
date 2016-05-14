@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>welcomewindow.png</file>
+        <file>../../Downloads/start (2).ico</file>
+        <file>../../Downloads/exit.ico</file>
+        <file>mikasa.png</file>
+        <file>conti.png</file>
+        <file>endwindow.png</file>
+        <file>mainwindow3.png</file>
+        <file>welexit.png</file>
+        <file>welstart.png</file>
+        <file>endexit.png</file>
+        <file>endrestart.png</file>
+    </qresource>
+</RCC>
