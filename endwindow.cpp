@@ -20,6 +20,7 @@ EndWindow::~EndWindow()
 }
 void EndWindow::on_quit_clicked()
 {
+    delete game;
     QApplication::quit();
 }
 void EndWindow::on_restart_clicked()
@@ -29,4 +30,7 @@ void EndWindow::on_restart_clicked()
     delete game;
 
     close();
+}
+void EndWindow::closeEvent (QCloseEvent *) {
+    delete this;
 }

@@ -16,7 +16,7 @@ class EndWindow : public QMainWindow
 public:
     explicit EndWindow(WelcomeWindow *welcome_window, MainWindow *main_window, Game *oldgame,int score,QWidget *parent = 0);
     ~EndWindow();
-
+    void closeEvent(QCloseEvent *);
 private slots:
     void on_quit_clicked();
     void on_restart_clicked();
